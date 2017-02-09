@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scaleable=no">
+		<title>Whitewater Adventures</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="scripts/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<!-- LOCAL CSS FILES -->
+		<link href="app/app.css" rel="stylesheet" />
+		<link href="ext-modules/psFramework/psFramework.css" rel="stylesheet" />
+		<link href="ext-modules/psMenu/psMenu.css" rel="stylesheet" />
+
+
+
+		<!-- Angular and JS lib -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+
+
+		<!-- Modules -->
+		<script src="ext-modules/psMenu/psMenuModule.js"></script>
+		<script src="ext-modules/psDashboard/psDashboardModule.js"></script>
+		<script src="ext-modules/psFramework/psFrameworkModule.js"></script>
+
+		<!--Controllers -->
+		<script src="ext-modules/psFramework/psFrameworkController.js"></script>
+		<script src="ext-modules/psMenu/psMenuController.js"></script>
+
+
+		<!-- Directives -->
+		<script src="ext-modules/psFramework/psFrameworkDirective.js"></script>
+		<script src="ext-modules/psMenu/psMenuDirective.js"></script>
+		<script src="ext-modules/psMenu/psMenuItemDirective.js"></script>
+
+
+		<script src="app/appModule.js"></script>
+
+
+</head>
+<body class="container-fluid">
+
+	<ps-framework  title="WhiteWater Adventures"
+								 subtitle="Administrative Application"
+								 icon-file="images/kayak-icon.png">
+		<ps-menu>
+			<ps-menu-item label="Dashboard" icon="fa-dashboard"  route="dashboard"></ps-menu-item>
+			<ps-menu-item label="Locations" icon="fa-location-arrow"  route="locations"></ps-menu-item>
+			<ps-menu-item label="Raft Guides" icon="fa-user" route="guides"></ps-menu-item>
+		</ps-menu>
+
+		</ps-framework>
+
+</body>
+</html>

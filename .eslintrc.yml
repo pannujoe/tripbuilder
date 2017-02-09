@@ -1,0 +1,8 @@
+extends: angular
+rules:
+  angular/log: 1
+  angular/controller-name: 0
+  semi: 2
+  quotes:
+    - 2
+    - single
